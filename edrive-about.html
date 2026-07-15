@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="About.css">
+</head>
+<body>
+
+<header>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-contact">
+        <a href="tel:+12345678900">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+123 (456) 789 00</span>
+        </a>
+        <a href="mailto:learn@drive.com">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          <span>learn@drive.com</span>
+        </a>
+      </div>
+      <div class="topbar-social">
+        <span>FOLLOW US</span>
+        <div class="icons">
+          <a href="#" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.77.35-1.6.58-2.46.68a4.3 4.3 0 0 0 1.88-2.37c-.83.49-1.75.85-2.72 1.04a4.27 4.27 0 0 0-7.27 3.89A12.13 12.13 0 0 1 2.6 4.5a4.26 4.26 0 0 0 1.32 5.7 4.23 4.23 0 0 1-1.93-.53 4.27 4.27 0 0 0 3.42 4.24 4.28 4.28 0 0 1-1.93.07 4.27 4.27 0 0 0 3.98 2.96A8.57 8.57 0 0 1 2 18.58 12.1 12.1 0 0 0 8.56 20.5c7.86 0 12.16-6.51 12.16-12.16 0-.19 0-.37-.01-.55.84-.6 1.56-1.36 2.29-2.39Z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2s-.21-1.48-.86-2.13c-.82-.86-1.74-.86-2.16-.91C15.6 4 12 4 12 4s-3.6 0-6.58.16c-.42.05-1.34.05-2.16.91-.65.65-.86 2.13-.86 2.13S2.18 8.94 2.18 10.69v1.61c0 1.75.22 3.49.22 3.49s.21 1.48.86 2.13c.82.86 1.9.83 2.38.92C7.4 19.85 12 19.9 12 19.9s3.6 0 6.58-.16c.42-.05 1.34-.06 2.16-.92.65-.65.86-2.13.86-2.13s.22-1.74.22-3.49v-1.61c0-1.75-.22-3.49-.22-3.49ZM9.96 14.6V9.4l5.62 2.6Z"/></svg></a>
+          <a href="#" aria-label="X"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.2 8.2L23 22h-6.4l-5-6.5L5.6 22H2.5l7.7-8.8L1.7 2h6.5l4.5 6 6.2-6Z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="Drive logo" class="logo-mark">
+        Drive<span class="dot">.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Hero</a></li>
+        <li><a href="edrive-about.html" class="active">About Us</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="pages-trigger">Pages <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M6 9l6 6 6-6"/></svg></a>
+          <ul class="dropdown-menu">
+            <li><a href="edrive-service.html">Service</a></li>
+            <li><a href="edrive-service-detail.html">Service Detail</a></li>
+          </ul>
+        </li>
+        <li><a href="edrive-contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="navbar-cta">
+        <a href="#" class="btn btn-primary">Get A Quote <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        <button class="menu-toggle" aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- ===== Page Title Banner ===== -->
+<section class="page-banner">
+  <div class="page-banner-inner">
+    <h1>About us</h1>
+    <div class="page-breadcrumb">
+      <a href="#">Home</a>
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg>
+      <span>About Us</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Intro split: Let's learn with Us ===== -->
+<section class="intro-split">
+  <div class="intro-inner">
+    <div class="intro-photo-wrap">
+      <div class="intro-dots"></div>
+      <!-- Replace with: <img src="learn-with-us.jpg" alt="Student learning to drive" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;"> -->
+      <img src="Learn With Us.jpg" alt="Student learning to drive" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;">
+    </div>
+
+    <div class="intro-content">
+      <div class="intro-content-top">
+        <div>
+          <div class="eyebrow">
+            <span class="tire-mark"><span></span><span></span><span></span><span></span></span>
+            Est Since 2002
+          </div>
+          <h2>Let's learn with Us.</h2>
+        </div>
+        <span class="intro-spin-badge">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FB5B3B" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5 19c0-3.5 3-6 7-6s7 2.5 7 6"/><path d="M8 8c0-1.6 1.8-3 4-3s4 1.4 4 3" stroke="#15224A"/></svg>
+        </span>
+      </div>
+
+      <div class="intro-feature">
+        <span class="intro-feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><circle cx="8.5" cy="9.5" r="1.8"/><path d="M14 9h5M14 12h5"/></svg>
+        </span>
+        <p><strong>Certified Instructors:</strong> All of our instructors are fully certified and have years of experience.</p>
+      </div>
+
+      <p>Since 1986, throughout the area, School of Driving has earned a reputation for responsible and caring driving instruction. Throughout USA, Europe and others, wherever you live, with our professional and friendly local driving instructors, you'll enjoy a relaxed, positive and encouraging environment as you start your driving lessons and learn to drive.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Stats bar ===== -->
+<section class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-item-icon">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#FB5B3B" stroke-width="1.4"><path d="M12 3 5 6v5c0 5 3 8 7 9 4-1 7-4 7-9V6Z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <div class="stat-number">18</div>
+      <div class="stat-label">Teachers</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-item-icon">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#FB5B3B" stroke-width="1.4"><circle cx="12" cy="7" r="3.2"/><path d="M6 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="12" cy="13.5" r="1"/></svg>
+      </div>
+      <div class="stat-number">1100</div>
+      <div class="stat-label">Training Hours</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-item-icon">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#FB5B3B" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><path d="M9 9c0-1.8 1.6-3 3-3M9 15c0 1.8 1.6 3 3 3"/></svg>
+      </div>
+      <div class="stat-number">7</div>
+      <div class="stat-label">Working Years</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-item-icon">
+        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#FB5B3B" stroke-width="1.4"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="2"/><path d="M6 16c0-1.7 1.2-3 2.5-3s2.5 1.3 2.5 3M14 9h5M14 12h5M14 15h3"/></svg>
+      </div>
+      <div class="stat-number">5k+</div>
+      <div class="stat-label">Licenses Issued</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Testimonials ===== -->
+<section class="testimonials-section">
+  <svg class="testimonials-ghost" viewBox="0 0 200 200" fill="none">
+    <circle cx="100" cy="100" r="95" stroke="#15224A" stroke-width="2"/>
+    <circle cx="100" cy="100" r="62" stroke="#15224A" stroke-width="2"/>
+    <circle cx="100" cy="100" r="10" stroke="#15224A" stroke-width="2"/>
+    <line x1="100" y1="5" x2="100" y2="38" stroke="#15224A" stroke-width="2"/>
+    <line x1="100" y1="162" x2="100" y2="195" stroke="#15224A" stroke-width="2"/>
+    <line x1="5" y1="100" x2="38" y2="100" stroke="#15224A" stroke-width="2"/>
+    <line x1="162" y1="100" x2="195" y2="100" stroke="#15224A" stroke-width="2"/>
+  </svg>
+
+  <div class="testimonials-inner">
+    <div class="testimonials-header">
+      <div class="eyebrow">
+        <span class="tire-mark"><span></span><span></span><span></span><span></span></span>
+        Case Study
+        <span class="tire-mark"><span></span><span></span><span></span><span></span></span>
+      </div>
+      <h2>See What Students are Talking <span class="underline-accent">About</span>.</h2>
+    </div>
+
+    <div class="swiper testimonials-carousel">
+      <div class="swiper-wrapper">
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide">
+          <div class="t-card">
+            <div class="t-card-photo">
+              <img src="Case Study1.jpg" alt="Student learning to drive" style="width:100%;height:100%;object-fit:cover;">
+              <button class="t-play-btn" aria-label="Play testimonial">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l12-7Z"/></svg>
+              </button>
+            </div>
+            <div class="t-card-body">
+              <div class="t-stars">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+              </div>
+              <p class="t-quote">"This driving school completely transformed my confidence behind the wheel. The instructors are patient and explain everything clearly."</p>
+              <div class="t-divider"></div>
+              <div class="t-person">
+                <span class="t-avatar">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg>
+                </span>
+                <div>
+                  <strong>Q. Kader</strong>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide">
+          <div class="t-card">
+            <div class="t-card-photo">
+              <img src="Case Study2.jpg" alt="Student learning to drive" style="width:100%;height:100%;object-fit:cover;">
+              <button class="t-play-btn" aria-label="Play testimonial">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l12-7Z"/></svg>
+              </button>
+            </div>
+            <div class="t-card-body">
+              <div class="t-stars">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+              </div>
+              <p class="t-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."</p>
+              <div class="t-divider"></div>
+              <div class="t-person">
+                <span class="t-avatar">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg>
+                </span>
+                <div>
+                  <strong>Penelope N. Harris</strong>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="swiper-slide">
+          <div class="t-card">
+            <div class="t-card-photo">
+              <!-- Replace with: <img src="student-3.jpg" alt="Smiling driving student"> -->
+              <div class="t-photo-placeholder">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="12" cy="12" r="3.2"/></svg>
+                Photo
+              </div>
+              <button class="t-play-btn" aria-label="Play testimonial">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l12-7Z"/></svg>
+              </button>
+            </div>
+            <div class="t-card-body">
+              <div class="t-stars">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><use href="#star-icon" xlink:href="#star-icon"/></svg>
+              </div>
+              <p class="t-quote">"Excellent instructors and very professional approach. Highly recommend to anyone looking to improve their driving skills and confidence."</p>
+              <div class="t-divider"></div>
+              <div class="t-person">
+                <span class="t-avatar">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg>
+                </span>
+                <div>
+                  <strong>James Mitchell</strong>
+                  <span>Student</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination dots -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Instructors ===== -->
+<section class="instructors-section">
+  <div class="instructors-inner">
+    <div class="instructors-header">
+      <div class="eyebrow">
+        <span class="tire-mark"><span></span><span></span><span></span><span></span></span>
+        Instructors
+        <span class="tire-mark"><span></span><span></span><span></span><span></span></span>
+      </div>
+      <h2>A passion for teaching, they make <span class="underline-accent">learning</span> to driving car.</h2>
+    </div>
+
+    <div class="instructors-grid">
+      <div class="instructor-card">
+        <img src="Instructor1.jpg" alt="Riaj Vangga" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin-bottom:1rem;">
+        <h3>Riaj Vangga</h3>
+        <span>Founder</span>
+      </div>
+      <div class="instructor-card">
+        <img src="Instructor2.jpg" alt="Nur Tasin" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin-bottom:1rem;">
+        <h3>Nur Tasin</h3>
+        <span>Head Of Idea</span>
+      </div>
+      <div class="instructor-card">
+        <img src="Instructor3.jpg" alt="Ayan PJMask" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin-bottom:1rem;">
+        <h3>Ayan PJMask</h3>
+        <span>Engine Expert</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <div class="footer-main">
+    <div class="newsletter-card">
+      <h3>Weekly newsletter</h3>
+      <p>Our newsletter for industry insights and company news!</p>
+      <label class="newsletter-label" for="footer-email">Email Address</label>
+      <div class="newsletter-input-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        <input id="footer-email" type="email" placeholder="e.g. name@domain.com">
+      </div>
+      <button class="btn btn-navy">Subscribe</button>
+    </div>
+
+    <div class="footer-col">
+      <h4>Essential <span class="underline-accent">pages</span></h4>
+      <div class="footer-links-grid">
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Our Team</a>
+        <a href="#">Prototype</a>
+        <a href="#">What We Do</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">Pricing Plans</a>
+        <a href="#">How It Works</a>
+        <a href="#">Faq</a>
+        <a href="#">Media Kit</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="footer-col footer-office">
+      <h4>Head office, <span class="underline-accent">USA</span></h4>
+      <address>
+        30 Beverley Brooklyn, NY 126 US<br>
+        info@drive.com<br>
+        +123 (456) 789 00
+      </address>
+      <a href="#" class="btn btn-navy">
+        Get Directions
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <a href="#" class="footer-logo">
+        <img src="logo.png" alt="Drive logo">
+        Drive<span class="dot" style="color:var(--accent);">.</span>
+      </a>
+      <p class="footer-copyright">Copyright &amp; design by &copy; 2026 Codeixer | All Rights Reserved</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></svg></a>
+        <a href="#" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.2 8.2L23 22h-6.4l-5-6.5L5.6 22H2.5l7.7-8.8L1.7 2h6.5l4.5 6 6.2-6Z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2s-.21-1.48-.86-2.13c-.82-.86-1.74-.86-2.16-.91C15.6 4 12 4 12 4s-3.6 0-6.58.16c-.42.05-1.34.05-2.16.91-.65.65-.86 2.13-.86 2.13S2.18 8.94 2.18 10.69v1.61c0 1.75.22 3.49.22 3.49s.21 1.48.86 2.13c.82.86 1.9.83 2.38.92C7.4 19.85 12 19.9 12 19.9s3.6 0 6.58-.16c.42-.05 1.34-.06 2.16-.92.65-.65.86-2.13.86-2.13s.22-1.74.22-3.49v-1.61c0-1.75-.22-3.49-.22-3.49ZM9.96 14.6V9.4l5.62 2.6Z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.9 8.65 22 11 22 14.3V21h-4v-5.95c0-1.42-.03-3.25-1.98-3.25-1.98 0-2.28 1.55-2.28 3.15V21H9z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  toggle.addEventListener('click', () => {
+    const isOpen = navLinks.style.display === 'flex';
+    navLinks.style.display = isOpen ? 'none' : 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.position = 'absolute';
+    navLinks.style.top = '100%';
+    navLinks.style.left = '0';
+    navLinks.style.right = '0';
+    navLinks.style.background = '#fff';
+    navLinks.style.padding = '1rem 2rem';
+    navLinks.style.boxShadow = '0 14px 24px -10px rgba(21,34,74,.15)';
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // Initialize testimonials carousel
+  const testimonialsSwiper = new Swiper('.testimonials-carousel', {
+    effect: 'slide',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+    },
+    mousewheel: false,
+    keyboard: true,
+    grabCursor: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    }
+  });
+</script>
+
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.addEventListener('load', function () {
+    window.scrollTo(0, 0);
+  });
+</script>
+</body>
+</html>
