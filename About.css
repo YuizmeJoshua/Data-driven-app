@@ -2124,6 +2124,43 @@ img {
   color: var(--accent);
   font-weight: 600;
 }
+.instructor-image-wrap {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.instructor-image-wrap img {
+  width: 100%;
+  display: block;
+  transition: transform .45s ease;
+}
+.instructor-card:hover .instructor-image-wrap img {
+  transform: scale(1.05);
+}
+.instructor-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  background: linear-gradient(180deg, rgba(21,34,74,0.05) 0%, rgba(13,19,42,0.88) 100%);
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+.instructor-card:hover .instructor-overlay {
+  opacity: 1;
+}
+.instructor-overlay h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  color: #fff;
+}
+.instructor-overlay span {
+  font-size: .9rem;
+  color: rgba(255,255,255,.85);
+}
 
 /* ===== Responsive ===== */
 @media (max-width:992px) {
