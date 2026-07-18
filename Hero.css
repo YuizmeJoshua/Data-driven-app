@@ -234,19 +234,7 @@ img{max-width:100%;display:block;}
   pointer-events:none;
 }
 .tire-strip{
-  position:absolute;
-  left:0; top:0; bottom:0;
-  width:34px;
-  display:flex;
-  flex-direction:column;
-  background:
-    repeating-linear-gradient(
-      to bottom,
-      var(--navy) 0px, var(--navy) 22px,
-      transparent 22px, transparent 30px
-    );
-  opacity:.06;
-  pointer-events:none;
+  display:none;
 }
 
 .hero-inner{
@@ -436,15 +424,7 @@ img{max-width:100%;display:block;}
 .hero-circle-bg::after{inset:-44px;border-color:rgba(251,91,59,.18);}
 
 .hero-visual-dots{
-  position:absolute;
-  right:2%;
-  bottom:12%;
-  width:110px;
-  height:70px;
-  background-image:radial-gradient(circle, var(--accent) 3px, transparent 3px);
-  background-size:18px 18px;
-  opacity:.9;
-  z-index:2;
+  display:none;
 }
 
 .hero-photo-wrap{
@@ -471,17 +451,17 @@ img{max-width:100%;display:block;}
 
 .hero-key-badge{
   position:absolute;
-  top:14%;
-  left:6%;
+  top:18%;
+  left:-6%;
   z-index:4;
   background:var(--white);
-  width:72px;
-  height:72px;
+  width:64px;
+  height:64px;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
-  color:var(--accent);
+  color:var(--navy);
   box-shadow:0 14px 30px -10px rgba(21,34,74,.35);
   animation:float 4.5s ease-in-out infinite;
 }
@@ -489,6 +469,13 @@ img{max-width:100%;display:block;}
   width:34px;
   height:34px;
 }
+.hero-key-badge:hover svg{
+  transform:scale(1.3);
+}
+.hero-key-badge:hover{
+  box-shadow:0 20px 40px -12px rgba(21,34,74,.35);
+}
+
 @keyframes float{
   0%,100%{transform:translateY(0);}
   50%{transform:translateY(-12px);}
@@ -511,16 +498,19 @@ img{max-width:100%;display:block;}
 
 .about-visual{position:relative;height:520px;}
 .about-img-main,.about-img-secondary{
-  position:absolute;
+  position:relative;
+  width:100%;
+  height:100%;
   border-radius:18px;
   overflow:hidden;
   box-shadow:0 24px 50px -20px rgba(21,34,74,.28);
 }
-.about-img-main{top:0;left:0;width:65%;aspect-ratio:3/3;}
+.about-img-main{
+  top:auto;
+  left:auto;
+}
 .about-img-secondary{
-  bottom:0;left:35%;width:62%;aspect-ratio:5/4;
-  border:6px solid var(--white);
-  z-index:2;
+  display:none;
 }
 .about-photo-placeholder{
   width:100%;height:100%;
