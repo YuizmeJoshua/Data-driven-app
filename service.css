@@ -215,19 +215,18 @@ img{max-width:100%;display:block;}
 }
 
 /* Page Banner */
-.page-banner{
-  position:relative;
-  background:linear-gradient(100deg, rgba(13,19,42,.88) 0%, rgba(13,19,42,.78) 100%),
-             linear-gradient(160deg,#3a4565,#1c2440);
-  overflow:hidden;
+.page-banner {
+  position: relative;
+  background: black;
+  overflow: hidden;
 }
-.page-banner::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  background:url('Page header 2.jpg') center/cover no-repeat;
-  opacity:.18;
-  pointer-events:none;
+.page-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('Page header 2.jpg') center/cover no-repeat;
+  opacity: 50%;
+  pointer-events: none;
 }
 .page-banner-inner{
   position:relative;z-index:1;
