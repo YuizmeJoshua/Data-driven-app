@@ -1689,8 +1689,7 @@ img {
 /* ===== Page Title Banner ===== */
 .page-banner {
   position: relative;
-  background: linear-gradient(100deg, rgba(13, 19, 42, .88) 0%, rgba(13, 19, 42, .78) 100%),
-    linear-gradient(160deg, #3a4565, #1c2440);
+  background: black;
   overflow: hidden;
 }
 .page-banner::before {
@@ -1698,7 +1697,7 @@ img {
   position: absolute;
   inset: 0;
   background: url('Page header 2.jpg') center/cover no-repeat;
-  opacity: .18;
+  opacity: 50%;
   pointer-events: none;
 }
 .page-banner-inner {
